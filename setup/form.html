@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>form</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+      <div class="container">
+
+
+        <!--header section starts-->
+<header class="header">
+    <a href="#" class="logo">
+        <img src="./images/logo.png" alt="MY LOGO">
+    </a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#products">products</a>
+        <a href="#review">review</a>
+        <a href="#contact">contact</a>
+        <a href="#blog">blogs</a>
+    </nav>
+    <div class="icons">
+        <!-- <div class="fas fa-search" id="search-btn"></div> -->
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-bars" id="menu-btn"></div>
+    </div>
+   
+ 
+</header>
+
+
+
+        <section class="table__container">
+            <table  spacing="0">
+                <tr>
+                    <th class="col-bg" rowspan="3">Day</th>
+                    <th colspan="3" >Seminar</th>
+                </tr>
+                <tr>
+                    <th  class="col-bg-green" colspan="2">schedule</th>
+                    <th rowspan="2">Topic</th>
+                </tr>
+
+                <tr>
+                    <th  class="col-bg-green" >Begin</th>
+                    <th  class="col-bg-green">End</th>
+                </tr>
+
+                <tr>
+                    <td class="col-bg" rowspan="3">
+                        Monday
+                    </td>
+                    <td class="col-bg" rowspan="3">
+                        8.00 am
+                    </td>
+                    <td  class="col-bg-green" rowspan="3">
+                        5.00 pm
+                    </td>
+                    <td>Introduction to xml</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Validity: DTD and Relax NG
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Validity: DTD and Relax NG
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-bg" rowspan="3">Tuesday</td>
+                    <td class="col-bg">8:00 a.m.</td>
+                    <td class="col-bg">11:00 a.m.</td>
+                    <td rowspan="1.5">XPath</td>
+                </tr>
+
+                <tr>
+                    <td class="col-bg">11.00 am</td>
+                    <td class="col-bg">2.00 am</td>
+                </tr>
+                <tr>
+                    <td class="col-bg">2.00 pm</td>
+                    <td class="col-bg">5.00 pm</td>
+                    <td rowspan="1.5"> xsl Transformation</td>
+                </tr>
+               
+               
+            </table>
+        </section>
+
+
+            <section class="container__form">
+                <div class="imgwrapper">
+                    <img src="./images/image-hero-tab.png"/>
+
+                </div>
+                <div class="forminner">
+                    <div class="forminner__wrapper">
+
+                        <form id="form"novalidate>
+                            <div class="formwrapper">
+                                <div class="label">Name</div>
+                                <input type="text" name="name" id="name"/>
+                                <div id="errormsgname"></div>
+                            </div>
+    
+                            <div class="formwrapper">
+                                <div class="label">Email</div>
+                                <input type="email" name="email" id="email"/>
+                                <div id="errormsgemail"></div>
+                            </div>
+    
+                            <input type="submit" id="submit" class="btn"></input>
+                            
+                        </form>
+                        
+                    </div>
+                   
+                </div>
+            </section>
+
+            <section class="contact">
+
+                <div class="contact__img_one">
+
+                </div>
+                <div class="contact__img_two">
+                    
+                </div>
+                <div class="contact__info">
+
+                    <div class="contact__infoinner">
+                        <div class="result__container">
+                            <span>Name:</span>
+                            <span id="nresult">John</span>
+                        </div>
+
+                        <div class="result__container">
+                            <span>Email:</span>
+                            <span id="eresult">John@hotmail.com</span>
+                        </div>
+                    </div>
+                    
+                   
+                </div>
+
+            </section>
+
+         
+
+      </div>
+
+   <script src="form.js"></script>
+   
+  </body>
+</html>

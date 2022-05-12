@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  
+<div class="container">
+<form id="form">
+  <h2>Registration</h2>
+  <div class="box">
+    <label>Full Name</label>
+    <input type="text" name="name" id="name"/>
+    <div class="error" id="nameerr"></div>
+  </div>	
+  <div class="box">
+    <label>Email Address</label>
+    <input type="text" name="name" id="email" />
+    <div class="error" id="emailerr"></div>
+  </div> 
+
+  <div class="box">
+    <label>Mobile</label>
+	  <input type="text" name="name" id="mobile"/>
+    <div class="error" id="mobileerr"></div>
+  </div> 
+
+  <div class="box">
+    <label>Country</label>
+	  <select name="country" id="country">
+      <option>Select</option>
+      <option>MAU</option>
+      <option>tEST</option>
+    </select>
+    <div class="error" id="countryerr"></div>
+  </div>	
+
+  <div class="box">
+    <label>Gender</label>
+	  <div class="form-inline" >
+      <div class="gender-wrapper"  id="gender">
+        <input type="radio" name="gender" value="Male"><span>Male</span>
+      </div>       
+      <div class="gender-wrapper">
+        <input type="radio" name="gender"  value="Female"><span>Female</span>
+      </div>    
+    </div>
+          <div class="error" id="gendererr"></div>
+   </div> 
+
+    <div class="box">
+      <input type="submit" class="btn" value="Submit"/>
+    </div>
+
+</form>
+</div>
+
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>

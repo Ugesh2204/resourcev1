@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.btn {
+    background-color: #ccc;
+    font-family: var(--ff-primary);
+    color: var(--lightcreambg);
+    display: inline-block;
+    padding: 11px 22px;
+    font-size: 15px;
+    line-height: 3px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: olive;
+    --transition: all 0.3s linear;
+}
+a {text-decoration: none;}
+
+/*Layou*/
+.container {
+    width:100%;
+    padding:0px 7%;
+}
+
+
+/*Header*/
+
+
+
+.header {
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:1.5rem 7%;
+    border-bottom: 1rem solid rgba(255,255,255,.3);;
+    position: fixed;
+    top:0;left:0;right:0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+ font-size: 16px;
+ text-transform: capitalize;
+}
+
+.header .navbar a:hover {
+    color: olive;
+}
+
+
+#menu-btn{
+    display:none;
+}
+
+   /*active used by js to show menu*/
+   .header .navbar.active {
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Table*/
+.table__container {
+    margin-bottom: 2rem;
+}
+
+table{
+    width:100%;
+    border:1px solid #ddd;
+    border-collapse: collapse;
+}
+
+td,th {
+    border:1px solid #ddd;
+    color:#333;
+    text-align: center;
+}
+.col-bg{
+    background-color: olive;
+}
+.col-bg-green {
+    background-color: greenyellow;
+}
+
+/* 
+tr:nth-child(even){background-color: #f2f2f2;} */
+
+/*Table*/
+/*Table*/
+
+
+
+
+  .container .container__form {
+      background-color: #333;
+      display: flex;
+      gap:1rem;
+      
+  }
+  .container__form .imgwrapper {
+      flex:50%;
+  }
+
+  .imgwrapper img {
+      width:100%;
+      height: 400px;
+  }
+
+  .container__form .forminner {
+      flex:50%;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+  }
+
+  .forminner .forminner__wrapper {
+      background-color:gray;
+      padding:2rem;
+  }
+
+
+  .contact {
+      margin-top: 2rem;
+      width:100%;
+      display:flex;
+      gap:1rem;
+  }
+  .contact .contact__img_one{
+    flex: 33.3%;
+    background:url(./images/uncompromisingmobile.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 312px;
+    
+  }
+
+  .contact .contact__img_two{
+    flex: 33.3%;
+    background:url(./images/uncompromisingmobile.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:100%;
+    height: 312px;
+  }
+
+  .contact__info {
+    flex:33.3%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+  }
+
+
+
+  .result__container {
+      width: 100%;
+      display:flex;
+  }
+
+
+
+  
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+
+    .container {
+        width:100%;
+        padding:0px 10%;
+      }
+     
+    .container .container__form {
+        display: block;
+    }
+
+    .imgwrapper img {
+        width:100%;
+        height: 200px;
+    }
+
+    /*Push menu to hide*/
+    .header .navbar {
+        position: absolute;
+        top:100%;
+        right:-100%;
+        background:#fff !important;
+        background: 30rem;
+        height: calc(100vh - 9.5rem);
+        width:300px;
+    }
+
+    #menu-btn{
+        display:inline-block;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 1rem;
+    }
+    /*Push menu to hide*/
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+}
+  
+  

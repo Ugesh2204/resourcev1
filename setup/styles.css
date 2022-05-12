@@ -1,0 +1,49 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+.counter-wrapper {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+.container {
+  width:400px;
+}
+
+.counter {
+  text-align: center;
+}
+
+.counter .counter__title {
+  font-size:4rem;
+}
+
+.counter .conter__value {
+  font-size: 4rem;
+}
+
+.btncontainer {
+  display:flex;
+  justify-content: center;
+  gap:1rem;
+}
+
+
+.btncontainer .btn {
+  padding:0.5rem 1rem;
+}
+
+.btncontainer .btn:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+
+/*form*/
+
+
